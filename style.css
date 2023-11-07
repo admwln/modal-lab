@@ -1,0 +1,101 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  padding-top: 25vh;
+  width: fit-content;
+  /* background-color: #888; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main div {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+main div:nth-of-type(1),
+main div:nth-of-type(3) {
+  background: url("thumb-product1a.png") no-repeat;
+}
+main div:nth-of-type(2),
+main div:nth-of-type(4) {
+  background: url("thumb-product2a.png") no-repeat;
+}
+main div:nth-of-type(1):hover,
+main div:nth-of-type(3):hover {
+  background: url("thumb-product1b.png") no-repeat;
+}
+main div:nth-of-type(2):hover,
+main div:nth-of-type(4):hover {
+  background: url("thumb-product2b.png") no-repeat;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-block: 25px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.25); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: fit-content;
+  position: relative;
+}
+
+.modal-content img {
+  width: 500px;
+}
+
+.toggle-img {
+  all: unset;
+  position: absolute;
+  bottom: 35px;
+  cursor: pointer;
+  color: rgb(122, 122, 122);
+}
+
+#a-btn {
+  left: 43%;
+}
+#b-btn {
+  right: 43%;
+}
+
+.toggle-img.chosen {
+  color: rgb(74, 74, 74);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
