@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- Preload B images -->
-    <link rel="preload" as="image" href="thumb-product1b.png" />
-    <link rel="preload" as="image" href="thumb-product2b.png" />
-    <title>Modal, Hover & Parallax Lab!</title>
+    <link rel="preload" as="image" href="product1b.png" />
+    <link rel="preload" as="image" href="product2b.png" />
+    <title>Modal Lab!</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="parallax">
-        <img src="city-window.png" alt="City window" />
-        <h1>PARALLAX.</h1>
-      </div>
-
-      <main>
-        <!-- Trigger/Open The Modal -->
-        <div id="product-1" class="product"></div>
-        <div id="product-2" class="product"></div>
-        <div id="product-3" class="product"></div>
-        <div id="product-4" class="product"></div>
-      </main>
+    <div class="parallax">
+      <img src="city-window.png" alt="City window" />
+      <h1>PARALLAX</h1>
+      <h2>Some more text here</h2>
     </div>
+
+    <main>
+      <!-- Trigger/Open The Modal -->
+      <!-- <button id="myBtn">Open Modal</button> -->
+      <div id="product-1" class="product"></div>
+      <div id="product-2" class="product"></div>
+      <div id="product-3" class="product"></div>
+      <div id="product-4" class="product"></div>
+    </main>
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
@@ -35,6 +35,7 @@
         <button id="b-btn" class="toggle-img">⬤</button>
       </div>
     </div>
+    <footer>All the way down here</footer>
     <script src="script.js"></script>
   </body>
 </html>
