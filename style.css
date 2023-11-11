@@ -1,141 +1,48 @@
+:root {
+  --blue: #1e90ff;
+  --offwhite: rgb(243, 236, 236) fff;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--offwhite);
 }
 
-main {
-  margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 100vh;
-  width: 100%;
-  background-color: #fbf8f8;
+.container {
   display: flex;
+}
+
+.row {
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
 }
 
-main div {
-  cursor: pointer;
-  width: 200px;
-  height: 200px;
-}
-
-main div:nth-of-type(1),
-main div:nth-of-type(3) {
-  background: url("thumb-product1a.png") no-repeat;
-}
-main div:nth-of-type(2),
-main div:nth-of-type(4) {
-  background: url("thumb-product2a.png") no-repeat;
-}
-main div:nth-of-type(1):hover,
-main div:nth-of-type(3):hover {
-  background: url("thumb-product1b.png") no-repeat;
-}
-main div:nth-of-type(2):hover,
-main div:nth-of-type(4):hover {
-  background: url("thumb-product2b.png") no-repeat;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-block: 25px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.25); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: fit-content;
-  position: relative;
-}
-
-.modal-content img {
-  width: 500px;
-}
-
-.toggle-img {
-  all: unset;
-  position: absolute;
-  bottom: 35px;
-  cursor: pointer;
-  color: rgb(122, 122, 122);
-}
-
-#a-btn {
-  left: 43%;
-}
-#b-btn {
-  right: 43%;
-}
-
-.toggle-img.chosen {
-  color: rgb(74, 74, 74);
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Parallax ---------------- */
-/* Scroll wrapper instead of body */
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-.parallax {
-  position: relative;
-  display: flex;
+.column {
   flex-direction: column;
-  justify-content: center;
+}
+
+.hero {
   align-items: center;
-  height: 100%;
-  color: white;
-  transform-style: preserve-3d;
-  z-index: -1;
+  justify-content: center;
 }
 
-.parallax > img {
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: -1;
-  transform: translateZ(-10px) scale(2);
+nav {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 24px;
 }
 
-.parallax > h1 {
+.hamburger,
+.shopping-bag {
+  padding: 0 24px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+h1 {
   margin: 0;
   padding: 0;
-  font-size: 14rem;
-  transform: translateZ(-5px) scale(1.5);
 }

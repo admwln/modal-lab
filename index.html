@@ -3,38 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProTech</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Preload B images -->
-    <link rel="preload" as="image" href="thumb-product1b.png" />
-    <link rel="preload" as="image" href="thumb-product2b.png" />
-    <title>Modal, Hover & Parallax Lab!</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="parallax">
-        <img src="city-window.png" alt="City window" />
-        <h1>PARALLAX.</h1>
-      </div>
-
-      <main>
-        <!-- Trigger/Open The Modal -->
-        <div id="product-1" class="product"></div>
-        <div id="product-2" class="product"></div>
-        <div id="product-3" class="product"></div>
-        <div id="product-4" class="product"></div>
-      </main>
-    </div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2></h2>
-        <img src="" alt="Product image" />
-        <button id="a-btn" class="toggle-img chosen">⬤</button>
-        <button id="b-btn" class="toggle-img">⬤</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <header class="hero container column">
+      <nav class="container row">
+        <div class="hamburger btn">
+          <img src="images/hamburger.svg" alt="" />
+        </div>
+        <div class="shopping-bag btn">
+          <img src="images/shopping-bag.svg" alt="" />
+        </div>
+      </nav>
+      <a href="index.html">
+        <h1>ProTech</h1>
+      </a>
+    </header>
+    <section class="product-grid small container"></section>
+    <section class="story container"></section>
+    <section class="campaign container"></section>
+    <section class="product-grid large container"></section>
+    <section class="reminder container"></section>
+    <footer class="conatiner"></footer>
   </body>
 </html>
