@@ -4,27 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="hero container column">
-      <nav class="container row">
-        <div class="hamburger btn">
-          <img src="images/hamburger.svg" alt="" />
-        </div>
-        <div class="shopping-bag btn">
-          <img src="images/shopping-bag.svg" alt="" />
-        </div>
-      </nav>
-      <a href="index.html">
-        <h1>ProTech</h1>
-      </a>
+      <div class="top-items container column">
+        <nav class="container row">
+          <div class="hamburger pointer">
+            <img src="images/hamburger.svg" alt="" />
+          </div>
+          <div class="shopping-bag pointer">
+            <img src="images/shopping-bag.svg" alt="" />
+          </div>
+        </nav>
+        <a href="index.html">
+          <h1>ProTech</h1>
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Vinn produkter från vår nya kollektion</h2>
+        <p>
+          Skriv din mail, sen är du med i tävlingen som är värd upp till 4000 kr
+        </p>
+        <button class="btn">Skicka</button>
+      </div>
     </header>
-    <section class="product-grid small container"></section>
-    <section class="story container"></section>
-    <section class="campaign container"></section>
-    <section class="product-grid large container"></section>
-    <section class="reminder container"></section>
-    <footer class="conatiner"></footer>
+    <section class="product-grid small container column">
+      <h2>Kollektionsnamn 2023</h2>
+    </section>
+    <section class="story container column">
+      <h2>Once upon a time...</h2>
+      <p>Senare år och syftar på den sabbare utvecklingen inom.</p>
+    </section>
+    <section class="campaign container column">
+      <h2>Varsågod! Vi lottar ut paracordarmband</h2>
+      <p>
+        Skriv in din mail, därefter får du en kod som du visar upp hos oss i
+        butik.
+      </p>
+    </section>
+    <section class="product-grid large container column">
+      <h2>Kollektionsnamn 2023</h2>
+    </section>
+    <section class="reminder container column"></section>
+    <footer class="container">
+      <h2>ProTech</h2>
+    </footer>
   </body>
 </html>
